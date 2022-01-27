@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function sigueme()
+{
+//Capto las coordenads del puntero.
+var x = window.event.x;
+var y = window.event.y;
+
+//Y se las coloco al div.
+
+document.getElementById("flecha").style.top = y + "px";
+}
+
+</script>
+</head>
+
+<body onMouseMove="sigueme();">
+    <div id="flecha" style="position: absolute; left: 100px; top: 50px;">  <img id="flechaImg" source src="imagenes/flecha.png" type='img/png;' />  </div>
+
+</body>
+</html>
