@@ -1,0 +1,74 @@
+/*ejemplo de comentario*/
+body {
+    margin: 0 auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 0.2vh;background-color: black;
+    color: white;
+}   
+
+/*####  MENU  ##################################################*/
+#main-header {display:block;position: fixed;width: 100vw;height: 6vh; top:0;z-index: 100;background-color: rgba(55,55,55,0.7); font-family: Georgia, "Times New Roman", Times, serif; }	
+#logo-header {position: relative; float:left;padding: 0 0 0 20px;text-decoration: none;color: white}
+#logo-header .site-name {display: block;font-weight: 100;font-size:1.1vh;color: white;}	
+/** Navegación */
+nav {float: right;color: white;}
+nav ul {margin: 0;padding: 0;list-style: none;padding-right: 0.8vw;font-size: 3.5vh;}	
+nav ul li {display: inline-block;line-height: 5vh;}
+nav ul li a { display: block;padding: 0 10px;text-decoration: none;color: white;}
+nav ul li a:hover {background: #0b76a6;}
+/*#############################################################*/
+
+#titulo{font-size: 20em;}
+#padre {
+    display: flex; flex-direction: column; align-items: center;
+    width: 100%;height: 100%;justify-content: center;
+}
+/** 
+#enviar{
+    display:flex;flex-direction: column;
+    width: 200em;height: 200em;justify-content: center;align-items: center;
+    background-color: brown;
+}
+#destino{width:16em ;height: 2em; font-size: 12em;}
+#emisor{width: 16em;height: 2em; font-size: 12em;}
+#textArea{font-size: 12em;width: 16em;}
+ */
+ #padre{display: flex;width: 100vw;height: 100vh;; background-image:url("imagenes/contacto1.jpg");background-size:contain;background-repeat: no-repeat;background-position: center;
+background-color:rgb(2,2,2) ;}
+#contacto{display:flex;width: 67vh;height:30vh; flex-wrap: wrap;justify-content: center; margin-left: 6vw;margin-top: 25vh;}
+
+ 
+  .divInfo1{display: flex; width:80%;height: 28%;
+    text-align: center;justify-content: center;align-items:center;justify-content: space-around; font-size:11em;
+   
+  }
+#divCel{width: 100%; background-image:url("imagenes/wha.png");background-size:contain;background-repeat: no-repeat;background-position: left;font-size: 18em;}
+#divEmail{display: flex;width: 100%; background-image:url("imagenes/gm.png");background-size:contain;background-repeat: no-repeat;background-position: left;justify-content: center;font-size: 14em;}
+
+
+   /*"""""""""""   Orientacion Portrait """"""""""*/
+@media screen and (orientation:portrait) {
+    body {font-size: 0.24vw;}  
+    #padre{display: flex;
+        align-items: center;margin-top: 23vh;
+        width: 100vw;height: 50vh;
+        background-color:rgb(2,2,2) ;}
+        #contacto{display:flex;width: 60vw;height:18vh;background-color:rgba(0,0,0,0.2); flex-wrap: wrap;justify-content: center; margin-left: 9vw;margin-top: 13vh;}
+        #divCel{font-size: 15em;}
+        #divEmail{font-size: 13em;}
+        nav ul {margin: 0;padding: 0;list-style: none;padding-right: 0.8vw;font-size: 2.4vh;}	
+        #logo-header .site-name {display: block;font-weight: 100;font-size:0.8vh;color: white;margin-top: -.9vh;}	
+        #logo-header .site-desc {display: block;font-weight: 100;font-size: 1.6vh;color: rgb(230, 224, 224);margin-top:-1vh}
+
+ #divEmail{justify-content: right;}
+ #logo-header .site-name {margin-top: 2vh;}	
+   
+}
+
+
+@media screen and (orientation:landscape) and (max-width: 990px  ) {
+    body {font-size: 0.3vh;}  
+    #divEmail{justify-content: right;font-size: 12em;}
+    nav ul {padding-right: 0.8vw;font-size: 5.6vh;margin-top: -1vh;}	
+    #logo-header .site-name {font-size: 2vh;margin-top: -2vh;}	
+}

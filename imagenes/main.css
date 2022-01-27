@@ -1,0 +1,226 @@
+/*ejemplo de comentario*/
+body {
+    margin: 0 auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 0.2vh;background: linear-gradient(to bottom, rgb(72, 44, 197), rgb(41, 40, 40));
+    
+}   
+
+/*####  MENU  ##################################################*/
+    #main-header {display:block;position: fixed;width: 100vw;height: 6vh; top:0;z-index: 100;background-color: rgba(55,55,55,0.7); font-family: Georgia, "Times New Roman", Times, serif; }	
+    #logo-header {position: relative; float:left;padding: 0 0 0 20px;text-decoration: none;color: white}
+    #logo-header .site-name {display: block;font-weight: 100;font-size:1.1vh;color: white;}	
+    /** Navegación */
+    nav {float: right;color: white;}
+    nav ul {margin: 0;padding: 0;list-style: none;padding-right: 0.8vw;font-size: 3.5vh;}	
+    nav ul li {display: inline-block;line-height: 5vh;}
+    nav ul li a { display: block;padding: 0 10px;text-decoration: none;color: white;}
+    nav ul li a:hover {background: #0b76a6;}
+    /*#############################################################*/
+
+#container {
+    display: flex; flex-direction: column; align-items: center;justify-content: center;
+    width: 100%;color: white;
+}
+
+
+#cabecera {
+    display: flex; flex-direction: column;
+    align-items:center;
+  
+    height: 94vh;
+    width: 99vw; 
+  
+    background-image:url("imagenes/j0.png");background-size:cover;background-repeat: no-repeat;background-position: center;
+}
+
+
+#cara { height: 34vh;margin-top: 17vh;}
+
+#cara:hover  {-webkit-transform:scale(1.2);transform:scale(1.1);}
+
+
+
+
+#habilidades{
+    display: flex;justify-content:space-around;
+    margin-top: 23vh;
+    height:34vh ;width: 60vw;background-color:rgba(55, 55, 55, 0);text-align: center;
+    font-size: 1px;
+    background-size: cover;background-position: center;
+    border: thin solid  rgba(0, 170, 51, 0);   /* borde solido y con color */
+    border-width:2em;   /* ancho del borde */    
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;justify-content: center;
+    font-family: monospace; 
+    
+}
+
+.cajas{ 
+    display: flex; 
+    width: 9vw; /* PA Q ONDA ESTOOO?????????????????????????????????????????????????????????????????????? */    
+    background-size:contain;background-repeat: no-repeat;background-position: center; 
+    justify-content: center;
+    margin-top: 1.2vh;
+    text-shadow: darkslategrey;
+    color:rgb(55, 55, 55);
+}
+
+.cajas:hover  {-webkit-transform:scale(1);transform:scale(1.2);}
+#html:hover {font-size: 20em; color:rgb(247, 247, 247);} 
+#css:hover {font-size: 20em; color:rgb(247, 247, 247); } 
+#js:hover {font-size: 20em; color:rgb(247, 247, 247); } 
+#ps:hover {font-size: 20em; color:rgb(247, 247, 247);} 
+#mySql:hover {font-size: 20em; color:rgb(247, 247, 247);} 
+#java:hover {font-size: 20em; color:rgb(247, 247, 247);} 
+
+#html{  background-image:url("imagenes/html.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#css{ background-image:url("imagenes/css.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#js{  background-image:url("imagenes/js.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#ps{ background-image:url("imagenes/ps.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#mySql{background-image:url("imagenes/mySql.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#java{background-image:url("imagenes/java.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+
+#SobreMi{display:flex;flex-direction: row;  width: 80vw;height:50vh; margin-top: 6vh; background-color: rgb(46, 131, 53); border: thin solid  rgb(00, 170, 51);box-shadow: -14px 14px 15px rgba(20, 20, 20, 0.89);}
+#SobreMiIZ{
+    display:flex;flex-direction: column;  width: 37%;height:100%;background-color: rgb(214, 196, 203);
+    background-image:url("imagenes/j4.jpg");background-size:cover;background-repeat: no-repeat;background-position: center;
+    }
+#SobreMiDE{display:flex;flex-direction: column;  width: 63%;height:100%;text-align:center ;
+            justify-content:center; ; 
+            background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(222, 44, 197));color: aliceblue; font-family: monospace;
+           
+        }
+.divSobreMi{   font-size: 14em;   }
+#fotoSobreMi {width: 100%; height: 100%;}
+
+
+
+#Estudios{display:flex;flex-direction: row;  width: 80vw;height:80vh; margin-top: 6vh; background-color: rgb(46, 131, 53); border: thin solid  rgb(00, 170, 51);box-shadow: -14px 14px 15px rgba(20, 20, 20, 0.89); }
+#EstudiosIZ{
+    display:flex;flex-direction: column;  width: 37%;height:100%;background-color: rgb(214, 196, 203);
+    background-image:url("imagenes/j2.jpg");background-size:cover;background-repeat: no-repeat;background-position: center;
+}
+#EstudiosDE{display:flex;flex-direction: column;  width: 63%;height:100%;text-align:center ;justify-content:center; ; 
+        background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(222, 44, 197));color: aliceblue; font-family: monospace;}
+.divEstudios{   font-size: 14em;   }
+#fotoEstudios {width: 100%; height: 100%;}
+
+
+#ExpLaboral{display:flex;flex-direction: row;  width: 80vw;height:110vh; margin-top: 6vh; background-color: rgb(46, 131, 53); border: thin solid  rgb(00, 170, 51);box-shadow: -14px 14px 15px rgba(20, 20, 20, 0.89); }
+#ExpLaboralIZ{
+    display:flex;flex-direction: column;  width: 37%;height:100%;background-color: rgb(214, 196, 203);
+    background-image:url("imagenes/j3.jpg");background-size:cover;background-repeat: no-repeat;background-position: center;
+}
+#ExpLaboralDE{display:flex;flex-direction: column;  width: 63%;height:100%;text-align:center ;justify-content:center; ; 
+        background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(222, 44, 197));color: aliceblue; font-family: monospace;}
+.divExpLaboral{   font-size: 14em;   }
+#fotoExpLaboral {width: 100%; height: 100%;}
+
+#proyectos{display: flex; flex-direction: row;  width: 80vw;height:40vh;overflow: hidden;margin-top: 6vh;box-shadow: -14px 14px 15px rgba(20, 20, 20, 0.89);
+    background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(222, 44, 197));color: aliceblue; font-family: monospace;
+    border: thin solid  rgb(00, 170, 51);color: rgb(14, 13, 14);}
+#proyectosIZ{ 
+    width: 40%;height:100%;background-image:url("imagenes/j6.jpg");background-size:contain;background-repeat: no-repeat;background-position: left;margin-left: 2.5%;
+   }
+#proyectosDE{ width: 60%;height:100%; background-color: rgb(55,55,55);font-size: 3vh; text-align: center; font-family: monospace;
+    background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(222, 44, 197));color: aliceblue; font-family: monospace;}
+
+.enlace{display: flex; flex-direction: column;
+    display:inline-block;
+    text-align: center;
+    font-weight: bold;font-style: italic;
+    color:rgb(4, 40, 138);
+    background: rgb(209, 208, 208);
+    transition: all 0.5s ease;
+    font-size: 2vh;
+    box-shadow: #ccc;
+    box-shadow: 0px 4px 4px 0px rgba(80, 80, 80, 0.8);
+  }
+  .enlace:hover{
+    color:rgb(253, 252, 252);
+     background: rgb(90, 115, 134);
+     border: 3px solid rgb(49, 48, 48);
+     box-shadow:NONE;
+  }
+
+#fin {height: 42vh;}
+#cajaFin {display: flex;width:80vw;height: 20vh; margin-top: 6vh; border: thin solid  rgb(00, 170, 51);
+          color: rgb(14, 13, 14); align-items: center; justify-content:space-around;}
+#responsiveDesing {height: 18vh;}
+
+
+/*"""""""""""   Orientacion Portrait """"""""""*/
+
+@media screen and (orientation:portrait) {
+   
+    #cabecera { width: 100%; height: 60vh; flex-direction: column; } 
+    #cara {height: 22vh;margin-top: 9vh;}
+    #habilidades{height:10vh ;width: 80vw;margin-top:20vh;}
+  
+    #SobreMi{flex-direction: column;  width: 80vw;height:50vh;}
+    #SobreMiIZ{ width: 100%;height:100%;}
+    #SobreMiDE{ width: 100%;height:100%; padding-top: 1vh; padding-bottom: 1vh;}
+    .divSobreMi{   font-size: 8em;   }
+
+    #Estudios{flex-direction: column;  width: 80vw;height:60vh;}
+    #EstudiosIZ{ width: 100%;height:100%;}
+    #EstudiosDE{ width: 100%;height:100%; padding-top: 1vh; padding-bottom: 1vh;}
+    .divEstudios{   font-size: 8em;   }
+   
+    #ExpLaboral{flex-direction: column;  width: 80vw;height:70vh;}
+    #ExpLaboralIZ{ width: 100%;height:100%;}
+    #ExpLaboralDE{ width: 100%;height:100%; padding-top: 1vh; padding-bottom: 1vh;}
+    .divExpLaboral{   font-size: 8em;   }
+
+    #proyectos{flex-direction: column;  width: 80vw;height:70vh;}
+    #proyectosIZ{ width: 100%;height:100%;margin-top: -1vh;}
+    #proyectosDE{ width: 100%;height:100%; padding-top: 1vh; padding-bottom: 1vh;}
+  
+    .cajas{ width:13vw;height: 12;margin-top:0.5vh;}
+    .cajas:hover{-webkit-transform:scale(1);transform:scale(1.2);}
+
+    #html:hover {font-size: 11em; color:rgb(247, 247, 247);} 
+    #css:hover {font-size: 11em; color:rgb(247, 247, 247); } 
+    #js:hover {font-size: 11em; color:rgb(247, 247, 247); } 
+    #ps:hover {font-size: 11em; color:rgb(247, 247, 247);} 
+    #mySql:hover {font-size: 11em; color:rgb(247, 247, 247);} 
+    #java:hover {font-size: 11em; color:rgb(247, 247, 247);} 
+    .divInfo{ font-size:7em;}
+    .divInfo1{font-size:7em;}
+    nav ul {font-size: 2.4vh;}	
+   
+    .enlace{font-size: 1.6vh;width: 90%;}
+    #cajaFin {width:80vw;}
+    #fin {height: 42vh; width: 80%;}
+   
+}
+
+/*"""""""""""""""""""""*/
+@media screen and (orientation:landscape) and (max-width: 900px) {
+ #SobreMi{width: 90vw;} .divSobreMi{   font-size: 17em;   }
+ #Estudios{width: 90vw;} .divEstudios{   font-size: 17em;   }
+ #ExpLaboral{width: 90vw;} .divExpLaboral{   font-size: 17em;   }
+ #proyectos{width: 90vw;} .divExpLaboral{   font-size: 17em;   }
+
+ #html:hover {font-size: 8em; color:rgb(247, 247, 247);} 
+ #css:hover {font-size: 8em; color:rgb(247, 247, 247); } 
+ #js:hover {font-size: 8em; color:rgb(247, 247, 247); } 
+ #ps:hover {font-size: 8em; color:rgb(247, 247, 247);} 
+ #mySql:hover {font-size: 8em; color:rgb(247, 247, 247);} 
+ #java:hover {font-size: 8em; color:rgb(247, 247, 247);} 
+ nav ul {font-size: 5vh;}	
+ #logo-header .site-name {font-size:1.8vh;margin-top: -1vh;}
+#habilidades{height:32vh ;width: 60vw;margin-top:20vh;}
+.cajas{ width:11vw;height:15vh;margin-top:3vh;}
+.cajas:hover{-webkit-transform:scale(1);transform:scale(1.2);}
+#cajaFin {width:90vw;}
+#fin {height: 42vh; width: 90%;}
+
+
+
+}
+
+
+
+
